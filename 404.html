@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101112">
+  <meta name="robots" content="noindex">
+  <title>404 — Página não encontrada | ONerd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="404.css">
+</head>
+<body class="error-page">
+  <header class="header error-header">
+    <a class="brand" href="index.html" aria-label="ONerd, início"><span class="brand-mark"><i></i><i></i><i></i></span><span>ONerd<span class="brand-dot">.</span></span></a>
+    <a class="error-header-link" href="index.html#contato">Fale com a gente <span>↗</span></a>
+  </header>
+  <main class="error-main">
+    <div class="error-grid" aria-hidden="true"></div>
+    <div class="error-orbit orbit-a" aria-hidden="true"></div>
+    <div class="error-orbit orbit-b" aria-hidden="true"></div>
+    <div class="error-content">
+      <div class="error-label"><span class="error-pulse"></span> SINAL FORA DE ROTA</div>
+      <div class="error-code" aria-label="Erro 404">4<span>0</span>4</div>
+      <h1>Essa página se perdeu<br>na rede.</h1>
+      <p>O endereço pode ter mudado ou não existe mais. Vamos encontrar um caminho de volta?</p>
+      <div class="error-actions">
+        <a class="button button-primary" href="index.html">Voltar ao início <span>↗</span></a>
+        <a class="error-secondary" href="index.html#contato">Precisa de ajuda? <span>↗</span></a>
+      </div>
+      <div class="error-status"><span class="status-mark">!</span><span>ERRO 404 <i></i> PÁGINA NÃO ENCONTRADA</span><span class="status-coordinate">ON / 404</span></div>
+    </div>
+    <div class="error-data" aria-hidden="true"><span>ROUTE_NOT_FOUND</span><span>RECONNECTING<span class="loading-dots">•••</span></span><span>STATUS: 404</span><span>TRACE_ID / ON-404</span></div>
+  </main>
+  <footer class="error-footer"><span>© <span id="year"></span> ONerd Tecnologia</span><a href="index.html">ONERD<span>.</span>COM</a></footer>
+  <script>document.querySelector('#year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
